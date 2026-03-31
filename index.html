@@ -160,7 +160,7 @@
 <header>
   <h1>CCAM</h1>
   <div class="subtitle">プライバシーポリシー / Privacy Policy</div>
-  <div class="updated">最終更新 / Last Updated: 2026-02-23</div>
+  <div class="updated">最終更新 / Last Updated: 2026-03-31</div>
   <div class="lang-switch">
     <a id="btn-ja" class="active" onclick="switchLang('ja')">日本語</a>
     <a id="btn-en" onclick="switchLang('en')">English</a>
@@ -197,17 +197,18 @@
   <p>これらのデータはデバイス内にのみ保存され、外部に送信されることはありません。UserDefaultsの使用は、Appleの Required Reason API ポリシーに基づき、アプリ自身のアプリ固有データの読み書き（理由コード: CA92.1）を目的としています。</p>
 
   <h3>2.3 第三者サービスにより収集される情報</h3>
-  <p>本アプリはGoogle Mobile Ads SDK（Google AdMob）（Google LLC提供）を使用して広告を表示しています。Google Mobile Ads SDKは以下の情報を自動的に収集する場合があります。</p>
+  <p>本アプリは Google Mobile Ads SDK（Google AdMob）および Google User Messaging Platform（UMP）SDK（いずれも Google LLC 提供）を使用しています。これらの SDK は、広告配信、同意管理、サービス保護および改善のため、以下の情報を収集する場合があります。実際に収集・利用される項目は、お客様の同意状態、ATT の選択、地域、デバイス設定、および Google の構成により異なる場合があります。</p>
   <table>
-    <tr><th>データの種類</th><th>目的</th><th>ユーザーとの紐付け</th></tr>
-    <tr><td>デバイス識別子（IDFA）</td><td>第三者広告の配信・パーソナライズ</td><td>紐付けなし</td></tr>
-    <tr><td>IPアドレス</td><td>おおよその位置情報の推定・不正防止</td><td>紐付けなし</td></tr>
-    <tr><td>広告データ（表示・クリック等）</td><td>広告配信の最適化</td><td>紐付けなし</td></tr>
-    <tr><td>製品操作データ（アプリ使用状況）</td><td>分析・広告頻度の最適化</td><td>紐付けなし</td></tr>
-    <tr><td>おおよその位置情報</td><td>地域に関連した広告配信</td><td>紐付けなし</td></tr>
-    <tr><td>診断データ（クラッシュログ等）</td><td>広告SDKの安定性向上</td><td>紐付けなし</td></tr>
+    <tr><th>データの種類</th><th>主な目的</th><th>ユーザーとの紐付けの可能性</th></tr>
+    <tr><td>デバイス識別子（IDFA 等）</td><td>第三者広告、分析、広告効果測定</td><td>あり得る</td></tr>
+    <tr><td>広告データ（表示・クリック等）</td><td>第三者広告、分析、広告配信の最適化</td><td>あり得る</td></tr>
+    <tr><td>製品操作データ（アプリ起動、広告操作等）</td><td>分析、広告配信の最適化、同意状態の反映</td><td>あり得る</td></tr>
+    <tr><td>おおよその位置情報（IPアドレス由来を含む）</td><td>地域に応じた広告配信、不正防止、分析</td><td>あり得る</td></tr>
+    <tr><td>パフォーマンスデータ</td><td>SDK および広告配信の改善</td><td>通常は紐付けなし</td></tr>
+    <tr><td>クラッシュデータ</td><td>障害解析と安定性向上</td><td>通常は紐付けなし</td></tr>
+    <tr><td>その他の診断データ</td><td>広告サービスの保護・改善、分析</td><td>通常は紐付けなし</td></tr>
   </table>
-  <p>Googleは本アプリのユーザーデータに対して、本ポリシーに記載されたものと同等以上のデータ保護を提供します。詳細はGoogleのプライバシーポリシー（<a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a>）をご確認ください。</p>
+  <p>上記の記載は、現在組み込まれている Google SDK の privacy manifest および Google の公開資料に基づいています。Google は本アプリのユーザーデータに対して、本ポリシーに記載されたものと同等以上のデータ保護を提供します。詳細は Google のプライバシーポリシー（<a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a>）をご確認ください。</p>
 
   <h3>2.4 Required Reason API の使用</h3>
   <p>本アプリおよび組み込みSDKは、Appleの Required Reason API ポリシーに基づき、以下のAPIを使用しています。</p>
@@ -222,15 +223,14 @@
 
 <section>
   <h2>3. デバイス機能へのアクセス</h2>
-  <p>本アプリは以下のデバイス機能へのアクセスを要求します。各権限はiOSの標準ダイアログを通じてお客様の明示的な許可を取得した場合にのみ使用されます。</p>
+  <p>本アプリは以下のデバイス機能またはシステム機能を使用します。明示的な権限が必要な場合は、iOS の標準ダイアログを通じてお客様の許可を取得した場合にのみ使用されます。</p>
   <table>
     <tr><th>機能</th><th>目的</th><th>データの外部送信</th></tr>
     <tr><td>カメラ</td><td>構図合わせ撮影のための写真撮影</td><td>なし</td></tr>
-    <tr><td>フォトライブラリ（読み取り）</td><td>オーバーレイ用の参照画像の選択</td><td>なし</td></tr>
-    <tr><td>フォトライブラリ（書き込み）</td><td>撮影した写真の保存</td><td>なし</td></tr>
-    <tr><td>モーションセンサー（CoreMotion）</td><td>水平インジケータの表示</td><td>なし</td></tr>
+    <tr><td>システムフォトピッカー</td><td>オーバーレイ用の参照画像をユーザーが選択するため</td><td>なし</td></tr>
+    <tr><td>フォトライブラリ（追加のみ / 書き込み）</td><td>撮影した写真の保存</td><td>なし</td></tr>
   </table>
-  <div class="note">カメラで撮影した写真およびフォトライブラリから選択した画像は、すべてデバイス上でのみ処理されます。開発者のサーバーや外部サービスにアップロードされることは一切ありません。モーションセンサーのデータもデバイス上でのみリアルタイム処理され、記録・保存・送信されません。</div>
+  <div class="note">参照画像の選択には Apple のシステムフォトピッカーを使用します。この機能のために、写真ライブラリ全体へのフルアクセスを要求するものではなく、ユーザーが選択した画像のみがアプリに渡されます。カメラで撮影した写真およびユーザーが選択した参照画像は、いずれもデバイス上でのみ処理され、開発者のサーバーや外部サービスにアップロードされることはありません。</div>
 </section>
 
 <section>
@@ -242,11 +242,12 @@
   <p>Googleの広告におけるデータの使用に関する詳細は、<a href="https://policies.google.com/technologies/partner-sites">「Google のサービスを使用するサイトやアプリから収集した情報の Google による使用」</a>および<a href="https://policies.google.com/technologies/ads">Google広告技術ポリシー</a>をご確認ください。</p>
 
   <h3>4.2 広告識別子（IDFA）とApp Tracking Transparency</h3>
-  <p>本アプリは、Appleの App Tracking Transparency（ATT）フレームワークに基づき、広告のパーソナライズを目的として広告識別子（IDFA）の使用許可をお客様に求めます。</p>
+  <p>本アプリは、Apple の App Tracking Transparency（ATT）フレームワークを使用し、広告に関連するトラッキング可否をお客様が選択できるようにしています。ATT の選択は、Google AdMob に送信される IDFA の可否に影響します。</p>
   <ul>
-    <li>お客様がトラッキングを許可した場合：パーソナライズされた広告（興味関心に基づく広告）が表示されます。</li>
-    <li>お客様がトラッキングを拒否した場合：パーソナライズされていない広告が表示されます。アプリの機能に影響はありません。</li>
+    <li>お客様がトラッキングを許可した場合：Google AdMob は、許可された範囲で IDFA を広告配信、広告効果測定、パーソナライズ等に使用する場合があります。</li>
+    <li>お客様がトラッキングを拒否した場合：Google Mobile Ads SDK は広告リクエストに IDFA を送信しません。ただし、広告リクエストには、お客様の同意状態、地域、デバイス設定、および適用法令に応じて、IDFA 以外のシグナルが使用される場合があります。</li>
   </ul>
+  <p>いずれの場合も、アプリのコア機能に影響はありません。</p>
   <p>トラッキングの許可は以下の手順でいつでも変更できます。</p>
   <ul>
     <li>iOSの「設定」→「プライバシーとセキュリティ」→「トラッキング」→ CCAMのトグルを切り替え</li>
@@ -257,14 +258,14 @@
   <ul>
     <li>ATTダイアログまたは上記のiOS設定からトラッキングを拒否する</li>
     <li>Googleの広告設定ページ（<a href="https://adssettings.google.com">https://adssettings.google.com</a>）でパーソナライズ広告をオフにする</li>
-    <li>EEA、英国、スイス等の対象地域では、アプリ内のプライバシーオプション（UMP同意管理）から広告の同意設定を変更する</li>
+    <li>EEA、英国、スイス等の対象地域では、<a href="#consent-revocation-ja">アプリ内のプライバシーオプション</a>から広告の同意設定を変更または撤回する</li>
   </ul>
 
   <h3>4.4 SKAdNetwork</h3>
   <p>本アプリは、Appleの SKAdNetwork フレームワークを使用して、ユーザーのプライバシーを保護しながら広告のアトリビューション（成果測定）を行っています。SKAdNetworkはAppleが管理する仕組みであり、個人を特定する情報は共有されません。</p>
 
   <h3>4.5 Google User Messaging Platform（UMP）</h3>
-  <p>EEA（欧州経済領域）、英国、スイス、およびその他の適用地域のお客様に対しては、Google UMP SDKを通じてGDPR等に準拠した同意管理を行います。同意フォームはアプリ起動時に表示され、お客様の同意状態に基づいて広告配信が制御されます。本アプリの同意管理は、IAB Europe Transparency and Consent Framework（TCF）v2.3に準拠しています。</p>
+  <p>EEA（欧州経済領域）、英国、スイス、およびその他の適用地域のお客様に対しては、Google UMP SDK を通じて同意管理を行います。同意フォームは必要な場合に表示され、お客様の同意状態に基づいて広告配信が制御されます。適用地域では、アプリ内のプライバシーオプションから同意を変更または撤回できます。</p>
 </section>
 
 <section>
@@ -273,8 +274,8 @@
   <table>
     <tr><th>処理活動</th><th>法的根拠（GDPR Art.6）</th></tr>
     <tr><td>アプリ設定のローカル保存</td><td>正当な利益（Art.6(1)(f)）- アプリ機能の提供に必要</td></tr>
-    <tr><td>パーソナライズ広告の配信</td><td>同意（Art.6(1)(a)）- ATTおよびUMPによる明示的同意</td></tr>
-    <tr><td>非パーソナライズ広告の配信</td><td>正当な利益（Art.6(1)(f)）- 無料サービスの維持</td></tr>
+    <tr><td>広告のパーソナライズに関連する処理</td><td>同意（Art.6(1)(a)）- 適用される場合に ATT および / または UMP による同意</td></tr>
+    <tr><td>IDFA を用いない広告関連処理</td><td>適用法令、地域、および Google の提供機能に応じた法的根拠</td></tr>
     <tr><td>広告のアトリビューション（SKAdNetwork）</td><td>正当な利益（Art.6(1)(f)）- 広告効果の測定</td></tr>
   </table>
   <p>同意に基づく処理について、お客様はいつでも同意を撤回する権利を有します。同意の撤回は、撤回前に行われた処理の適法性に影響を与えません。</p>
@@ -296,7 +297,7 @@
   <p>第三者サービス（Google AdMob）により収集されたデータの保存・削除については、Googleのデータ保持ポリシーに従います。</p>
   <ul>
     <li>Googleのデータ削除リクエスト：<a href="https://myaccount.google.com/data-and-privacy">Googleアカウント</a>から行えます</li>
-    <li>広告IDのリセット：iOSの「設定」→「プライバシーとセキュリティ」→「Apple広告」から可能です</li>
+    <li>広告関連のデバイス設定：iOS の「設定」内のプライバシーおよびトラッキング関連項目から確認・変更できます</li>
   </ul>
 </section>
 
@@ -320,15 +321,25 @@
 <section>
   <h2>10. お客様の権利と同意の管理</h2>
 
-  <h3>10.1 アクセス権限の管理（すべてのユーザー）</h3>
+  <h3 id="consent-revocation-ja">10.1 広告に関する同意の変更・撤回</h3>
+  <p>EEA、英国、スイス、およびその他の適用地域では、Google UMP による広告関連の同意をアプリ内でいつでも見直すことができます。</p>
+  <ul>
+    <li>CCAM を開く</li>
+    <li>設定メニューを開く</li>
+    <li>「プライバシーオプション / Privacy Options」を選択する</li>
+    <li>表示されるフォームで同意を変更または撤回する</li>
+  </ul>
+  <p>この導線は、Google AdMob の同意撤回要件に対応するために提供されています。</p>
+
+  <h3>10.2 アクセス権限の管理（すべてのユーザー）</h3>
   <ul>
     <li><strong>カメラ：</strong>「設定」→「CCAM」→「カメラ」のトグルで許可/拒否を変更</li>
-    <li><strong>フォトライブラリ：</strong>「設定」→「CCAM」→「写真」で許可レベルを変更</li>
+    <li><strong>写真の保存：</strong>「設定」→「CCAM」→「写真」で保存に関する許可を変更</li>
     <li><strong>トラッキング：</strong>「設定」→「プライバシーとセキュリティ」→「トラッキング」→ CCAMのトグルで変更</li>
   </ul>
   <p>権限を拒否した場合、該当機能が制限される場合がありますが、広告トラッキングの拒否によりアプリのコア機能が制限されることはありません。</p>
 
-  <h3>10.2 EEA・英国・スイスのお客様の権利（GDPR）</h3>
+  <h3>10.3 EEA・英国・スイスのお客様の権利（GDPR）</h3>
   <p>EEA、英国、またはスイスにお住まいのお客様は、GDPRおよび同等の現地法に基づき以下の権利を有しています。</p>
   <ul>
     <li>個人データへのアクセス権（Art.15）</li>
@@ -341,18 +352,17 @@
     <li>監督機関への苦情申立権（Art.77）</li>
   </ul>
 
-  <h3>10.3 米国にお住まいのお客様の権利（米国州プライバシー法）</h3>
+  <h3>10.4 米国にお住まいのお客様の権利（米国州プライバシー法）</h3>
   <p>カリフォルニア州（CCPA/CPRA）をはじめ、バージニア州、コロラド州、コネチカット州、ユタ州、アイオワ州、インディアナ州、テネシー州、テキサス州、オレゴン州、モンタナ州、デラウェア州、ニュージャージー州、ニューハンプシャー州、ネブラスカ州、ミネソタ州、メリーランド州、ケンタッキー州、ロードアイランド州等の包括的プライバシー法が施行されている州にお住まいのお客様は、各州法に基づき以下の権利を有する場合があります。</p>
   <ul>
-    <li>開発者はお客様の個人情報を販売または共有（クロスコンテキスト行動ターゲティング広告のための共有を含む）しません</li>
     <li>収集されたデータのカテゴリおよび目的に関する情報の開示を請求できます</li>
     <li>個人情報の削除を請求できます</li>
     <li>ターゲティング広告のオプトアウトを行うことができます</li>
     <li>差別的な扱いを受けることなく、上記の権利を行使できます</li>
   </ul>
-  <p>各州法の適用要件は異なりますが、開発者はすべてのお客様に対し上記と同等のプライバシー保護を提供します。</p>
+  <p>広告関連データについては、Google AdMob 等の第三者 SDK が、お客様の同意状態、デバイス設定、および適用法令に応じて処理を行う場合があります。各州法の適用要件は異なりますが、開発者はすべてのお客様に対し上記と同等のプライバシー保護を提供します。</p>
 
-  <h3>10.4 権利行使の方法</h3>
+  <h3>10.5 権利行使の方法</h3>
   <p>上記の権利を行使するには、下記「14. お問い合わせ」の連絡先までご連絡ください。開発者は適用法令で定められた期間内に対応いたします。</p>
 </section>
 
@@ -412,17 +422,18 @@
   <p>This data is stored only on your device and is never transmitted externally. The use of UserDefaults is in compliance with Apple's Required Reason API policy for the purpose of reading and writing app-specific data (Reason Code: CA92.1).</p>
 
   <h3>2.3 Information Collected by Third-Party Services</h3>
-  <p>The App uses the Google Mobile Ads SDK (Google AdMob), provided by Google LLC, to display advertisements. The Google Mobile Ads SDK may automatically collect the following information:</p>
+  <p>The App uses the Google Mobile Ads SDK (Google AdMob) and the Google User Messaging Platform (UMP) SDK, both provided by Google LLC. These SDKs may collect the following information for ad delivery, consent management, service protection, and improvement. The specific data collected and used may vary depending on your consent choices, ATT status, region, device settings, and Google's configuration.</p>
   <table>
-    <tr><th>Data Type</th><th>Purpose</th><th>Linked to User</th></tr>
-    <tr><td>Device Identifier (IDFA)</td><td>Third-party ad delivery and personalization</td><td>Not linked</td></tr>
-    <tr><td>IP Address</td><td>Coarse location inference, fraud prevention</td><td>Not linked</td></tr>
-    <tr><td>Advertising Data (impressions, clicks, etc.)</td><td>Ad delivery optimization</td><td>Not linked</td></tr>
-    <tr><td>Product Interaction Data (app usage)</td><td>Analytics and ad frequency optimization</td><td>Not linked</td></tr>
-    <tr><td>Coarse Location</td><td>Region-relevant ad delivery</td><td>Not linked</td></tr>
-    <tr><td>Diagnostics Data (crash logs, etc.)</td><td>Ad SDK stability improvement</td><td>Not linked</td></tr>
+    <tr><th>Data Type</th><th>Primary Purpose</th><th>May Be Linked to User</th></tr>
+    <tr><td>Device Identifier (including IDFA)</td><td>Third-party advertising, analytics, ad measurement</td><td>Possible</td></tr>
+    <tr><td>Advertising Data (impressions, clicks, etc.)</td><td>Third-party advertising, analytics, ad delivery optimization</td><td>Possible</td></tr>
+    <tr><td>Product Interaction Data (app launches, ad interactions, etc.)</td><td>Analytics, ad delivery optimization, reflecting consent status</td><td>Possible</td></tr>
+    <tr><td>Coarse Location (including IP-derived location)</td><td>Region-relevant ad delivery, fraud prevention, analytics</td><td>Possible</td></tr>
+    <tr><td>Performance Data</td><td>Improving SDK and ad delivery performance</td><td>Typically not linked</td></tr>
+    <tr><td>Crash Data</td><td>Troubleshooting and stability improvement</td><td>Typically not linked</td></tr>
+    <tr><td>Other Diagnostic Data</td><td>Protecting and improving advertising services, analytics</td><td>Typically not linked</td></tr>
   </table>
-  <p>Google provides the same or greater level of protection for user data as described in this Policy. For details, please refer to <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>.</p>
+  <p>The disclosures above are based on the privacy manifests of the currently integrated Google SDKs and Google's public documentation. Google provides the same or greater level of protection for user data as described in this Policy. For details, please refer to <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>.</p>
 
   <h3>2.4 Required Reason API Usage</h3>
   <p>The App and its embedded SDKs use the following APIs in compliance with Apple's Required Reason API policy:</p>
@@ -437,15 +448,14 @@
 
 <section>
   <h2>3. Device Feature Access</h2>
-  <p>The App requests access to the following device features. Each permission is used only after obtaining your explicit consent through iOS standard dialogs.</p>
+  <p>The App uses the following device features or system components. Where explicit permission is required, the feature is used only after you grant access through the standard iOS permission dialog.</p>
   <table>
     <tr><th>Feature</th><th>Purpose</th><th>External Transmission</th></tr>
     <tr><td>Camera</td><td>Taking photos for composition matching</td><td>None</td></tr>
-    <tr><td>Photo Library (Read)</td><td>Selecting reference images for overlay</td><td>None</td></tr>
-    <tr><td>Photo Library (Write)</td><td>Saving captured photos</td><td>None</td></tr>
-    <tr><td>Motion Sensors (CoreMotion)</td><td>Displaying level indicator</td><td>None</td></tr>
+    <tr><td>System Photo Picker</td><td>Letting the user choose a reference image for overlay</td><td>None</td></tr>
+    <tr><td>Photo Library (Add Only / Write)</td><td>Saving captured photos</td><td>None</td></tr>
   </table>
-  <div class="note">All photos captured by the camera and images selected from the Photo Library are processed entirely on your device. They are never uploaded to the Developer's servers or any external service. Motion sensor data is used only for real-time on-device processing and is not recorded, stored, or transmitted.</div>
+  <div class="note">Reference image selection uses Apple's system photo picker. The App does not require full photo library access for this feature; only the image you choose is provided to the App. All captured photos and selected reference images are processed entirely on your device and are never uploaded to the Developer's servers or any external service.</div>
 </section>
 
 <section>
@@ -457,11 +467,12 @@
   <p>For details on how Google uses data, please see <a href="https://policies.google.com/technologies/partner-sites">"How Google uses data when you use our partners' sites or apps"</a> and <a href="https://policies.google.com/technologies/ads">Google's Advertising Technology Policies</a>.</p>
 
   <h3>4.2 Advertising Identifier (IDFA) and App Tracking Transparency</h3>
-  <p>The App requests your permission to use the Advertising Identifier (IDFA) for ad personalization through Apple's App Tracking Transparency (ATT) framework.</p>
+  <p>The App uses Apple's App Tracking Transparency (ATT) framework so that you can choose whether advertising-related tracking is allowed. Your ATT choice affects whether IDFA can be sent to Google AdMob.</p>
   <ul>
-    <li>If you allow tracking: Personalized (interest-based) ads will be displayed.</li>
-    <li>If you deny tracking: Non-personalized ads will be displayed. App functionality is not affected.</li>
+    <li>If you allow tracking: Google AdMob may use IDFA, within the scope of your permission, for ad delivery, ad measurement, personalization, and related purposes.</li>
+    <li>If you deny tracking: The Google Mobile Ads SDK does not send IDFA in the ad request. However, ad requests may still use signals other than IDFA depending on your consent choices, region, device settings, and applicable law.</li>
   </ul>
+  <p>In either case, the App's core functionality is not affected.</p>
   <p>You can change your tracking permission at any time:</p>
   <ul>
     <li>iOS Settings → Privacy & Security → Tracking → Toggle CCAM on or off</li>
@@ -472,14 +483,14 @@
   <ul>
     <li>Deny tracking via the ATT dialog or iOS Settings as described above</li>
     <li>Disable personalized ads at <a href="https://adssettings.google.com">Google Ad Settings</a></li>
-    <li>In applicable regions (EEA, UK, Switzerland, etc.), change your consent settings through the in-app privacy options (UMP consent management)</li>
+    <li>In applicable regions (EEA, UK, Switzerland, etc.), change or withdraw your consent through the <a href="#consent-revocation-en">in-app privacy options</a></li>
   </ul>
 
   <h3>4.4 SKAdNetwork</h3>
   <p>The App uses Apple's SKAdNetwork framework for privacy-preserving ad attribution. SKAdNetwork is managed by Apple, and no personally identifiable information is shared.</p>
 
   <h3>4.5 Google User Messaging Platform (UMP)</h3>
-  <p>For users in the EEA (European Economic Area), UK, Switzerland, and other applicable regions, consent management compliant with GDPR and other regulations is provided through the Google UMP SDK. The consent form is displayed at app launch, and ad delivery is controlled based on your consent preferences. The App's consent management complies with the IAB Europe Transparency and Consent Framework (TCF) v2.3.</p>
+  <p>For users in the EEA (European Economic Area), UK, Switzerland, and other applicable regions, consent management is provided through the Google UMP SDK. Consent forms are shown when required, and ad delivery is controlled based on your consent choices. In applicable regions, you can change or withdraw consent through the in-app privacy options.</p>
 </section>
 
 <section>
@@ -488,8 +499,8 @@
   <table>
     <tr><th>Processing Activity</th><th>Legal Basis (GDPR Art. 6)</th></tr>
     <tr><td>Local storage of app settings</td><td>Legitimate interests (Art. 6(1)(f)) – necessary for app functionality</td></tr>
-    <tr><td>Personalized ad delivery</td><td>Consent (Art. 6(1)(a)) – explicit consent via ATT and UMP</td></tr>
-    <tr><td>Non-personalized ad delivery</td><td>Legitimate interests (Art. 6(1)(f)) – sustaining a free service</td></tr>
+    <tr><td>Processing related to ad personalization</td><td>Consent (Art. 6(1)(a)) – where required, via ATT and/or UMP</td></tr>
+    <tr><td>Advertising-related processing without IDFA</td><td>A lawful basis determined based on applicable law, region, and Google's service configuration</td></tr>
     <tr><td>Ad attribution (SKAdNetwork)</td><td>Legitimate interests (Art. 6(1)(f)) – measuring ad effectiveness</td></tr>
   </table>
   <p>For processing based on consent, you have the right to withdraw your consent at any time. Withdrawal of consent does not affect the lawfulness of processing carried out prior to the withdrawal.</p>
@@ -511,7 +522,7 @@
   <p>Retention and deletion of data collected by third-party services (Google AdMob) are governed by Google's data retention policies.</p>
   <ul>
     <li>Google data deletion requests: Available through your <a href="https://myaccount.google.com/data-and-privacy">Google Account</a></li>
-    <li>Advertising ID reset: Available in iOS Settings → Privacy & Security → Apple Advertising</li>
+    <li>Ad-related device settings: Available from privacy and tracking-related sections in iOS Settings</li>
   </ul>
 </section>
 
@@ -535,15 +546,25 @@
 <section>
   <h2>10. Your Rights and Consent Management</h2>
 
-  <h3>10.1 Permission Management (All Users)</h3>
+  <h3 id="consent-revocation-en">10.1 Changing or Withdrawing Advertising Consent</h3>
+  <p>In the EEA, UK, Switzerland, and other applicable regions, you can review your Google UMP advertising consent choices in the App at any time.</p>
+  <ul>
+    <li>Open CCAM</li>
+    <li>Open the settings menu</li>
+    <li>Select "Privacy Options"</li>
+    <li>Use the displayed form to change or withdraw consent</li>
+  </ul>
+  <p>This path is provided to support Google AdMob's consent revocation requirements.</p>
+
+  <h3>10.2 Permission Management (All Users)</h3>
   <ul>
     <li><strong>Camera:</strong> Settings → CCAM → Toggle Camera permission</li>
-    <li><strong>Photo Library:</strong> Settings → CCAM → Photos → Change permission level</li>
+    <li><strong>Saving Photos:</strong> Settings → CCAM → Photos → Change save-related permission</li>
     <li><strong>Tracking:</strong> Settings → Privacy & Security → Tracking → Toggle CCAM</li>
   </ul>
   <p>Denying permissions may limit related features, but denying ad tracking will not restrict core app functionality.</p>
 
-  <h3>10.2 Rights for EEA, UK, and Swiss Users (GDPR)</h3>
+  <h3>10.3 Rights for EEA, UK, and Swiss Users (GDPR)</h3>
   <p>If you reside in the EEA, UK, or Switzerland, you have the following rights under the GDPR and equivalent local laws:</p>
   <ul>
     <li>Right of access to personal data (Art. 15)</li>
@@ -556,18 +577,17 @@
     <li>Right to lodge a complaint with a supervisory authority (Art. 77)</li>
   </ul>
 
-  <h3>10.3 Rights for US Residents (State Privacy Laws)</h3>
+  <h3>10.4 Rights for US Residents (State Privacy Laws)</h3>
   <p>If you reside in a US state with a comprehensive privacy law — including California (CCPA/CPRA), Virginia, Colorado, Connecticut, Utah, Iowa, Indiana, Tennessee, Texas, Oregon, Montana, Delaware, New Jersey, New Hampshire, Nebraska, Minnesota, Maryland, Kentucky, Rhode Island, and others — you may have the following rights under applicable state law:</p>
   <ul>
-    <li>The Developer does not sell or share (including sharing for cross-context behavioral advertising) your personal information</li>
     <li>You may request disclosure of the categories and purposes of data collected</li>
     <li>You may request deletion of your personal information</li>
     <li>You may opt out of targeted advertising</li>
     <li>You may exercise these rights without discriminatory treatment</li>
   </ul>
-  <p>While the specific applicability thresholds differ by state, the Developer provides equivalent privacy protections to all users.</p>
+  <p>Advertising-related data may also be processed by third-party SDKs such as Google AdMob depending on your consent choices, device settings, and applicable law. While the specific applicability thresholds differ by state, the Developer provides equivalent privacy protections to all users.</p>
 
-  <h3>10.4 How to Exercise Your Rights</h3>
+  <h3>10.5 How to Exercise Your Rights</h3>
   <p>To exercise any of the above rights, please contact us using the information in Section 14. The Developer will respond within the timeframe required by applicable law.</p>
 </section>
 
